@@ -11,6 +11,9 @@ class home_page extends StatefulWidget {
 }
 
 class _home_pageState extends State<home_page> {
+
+  bool isNum = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,7 +52,7 @@ class _home_pageState extends State<home_page> {
                           borderRadius: BorderRadius.circular(10),
                           borderSide: BorderSide(
                               color: Colors.lightBlueAccent,
-                              width: 2
+                              width: 2,
                           )
                       ),
                       hintText: "Enter Seat Number",
@@ -65,7 +68,9 @@ class _home_pageState extends State<home_page> {
                       padding: const EdgeInsets.only(left: 265),
                       child: ElevatedButton(
                         onPressed: () {
-
+                          setState(() {
+                            isNum = true;
+                          });
                         }, child: Text("Find",style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 15,
@@ -84,31 +89,66 @@ class _home_pageState extends State<home_page> {
                 ),
                 SizedBox(height: 30,),
                 upper_seat(num1: '1', num2: '2', num3: '3', num4: '7',
-                  Useat: kupr, Mseat: kmid, Lseat: klow, SUseat: ksupr,),
+                  Useat: kupr, Mseat: kmid, Lseat: klow, SUseat: ksupr,
+                  UpdateCLR1: isNum ? Change_Clr : Clrbutton, UpdateCLR2: isNum ? Change_Clr : Clrbutton,
+                  UpdateCLR3: isNum ? Change_Clr : Clrbutton, UpdateCLR4: isNum ? Change_Clr : Clrbutton,
+                  UpdateTxtCLR1: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR2: isNum ? NTxt_Clr : Txt_Clr,
+                  UpdateTxtCLR3: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR4: isNum ? NTxt_Clr : Txt_Clr,),
                     SizedBox(height: 30,),
                     upper_seat(num1: '4', num2: '5', num3: '6', num4: '8',
-                      Useat: kupr, Mseat: kmid, Lseat: klow, SUseat: ksupr,),
+                      Useat: kupr, Mseat: kmid, Lseat: klow, SUseat: ksupr,UpdateCLR1: isNum ? Change_Clr : Clrbutton, UpdateCLR2: isNum ? Change_Clr : Clrbutton,
+                      UpdateCLR3: isNum ? Change_Clr : Clrbutton, UpdateCLR4: isNum ? Change_Clr : Clrbutton,
+                      UpdateTxtCLR1: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR2: isNum ? NTxt_Clr : Txt_Clr,
+                      UpdateTxtCLR3: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR4: isNum ? NTxt_Clr : Txt_Clr,),
                     SizedBox(height: 5,),
                     lower_seat(num1:'9', num2: '10', num4: '11', LSeat: klow,
-                      MSeat: kmid, USeat: kupr, SLSeat: kslow, num3: '15',),
+                      MSeat: kmid, USeat: kupr, SLSeat: kslow, num3: '15',
+                      UpdateCLR1: isNum ? Change_Clr : Clrbutton, UpdateCLR2: isNum ? Change_Clr : Clrbutton,
+                      UpdateCLR3: isNum ? Change_Clr : Clrbutton, UpdateCLR4: isNum ? Change_Clr : Clrbutton,
+                      UpdateTxtCLR1: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR2: isNum ? NTxt_Clr : Txt_Clr,
+                      UpdateTxtCLR3: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR4: isNum ? NTxt_Clr : Txt_Clr,),
                     SizedBox(height: 30,),
                     upper_seat(num1: '12', num2: '13', num3: '14', num4: '16',
-                      Useat: kupr, Mseat: kmid, Lseat: klow, SUseat: ksupr,),
+                      Useat: kupr, Mseat: kmid, Lseat: klow, SUseat: ksupr,
+                      UpdateCLR1: isNum ? Change_Clr : Clrbutton, UpdateCLR2: isNum ? Change_Clr : Clrbutton,
+                      UpdateCLR3: isNum ? Change_Clr : Clrbutton, UpdateCLR4: isNum ? Change_Clr : Clrbutton,
+                      UpdateTxtCLR1: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR2: isNum ? NTxt_Clr : Txt_Clr,
+                      UpdateTxtCLR3: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR4: isNum ? NTxt_Clr : Txt_Clr,),
                     SizedBox(height: 5,),
                     lower_seat(num1:'17', num2: '18', num4: '19', LSeat: klow,
-                      MSeat: kmid, USeat: kupr, SLSeat: kslow, num3: '23',),
+                      MSeat: kmid, USeat: kupr, SLSeat: kslow, num3: '23',
+                      UpdateCLR1: isNum ? Change_Clr : Clrbutton, UpdateCLR2: isNum ? Change_Clr : Clrbutton,
+                      UpdateCLR3: isNum ? Change_Clr : Clrbutton, UpdateCLR4: isNum ? Change_Clr : Clrbutton,
+                      UpdateTxtCLR1: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR2: isNum ? NTxt_Clr : Txt_Clr,
+                      UpdateTxtCLR3: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR4: isNum ? NTxt_Clr : Txt_Clr,),
                     SizedBox(height: 30,),
                     upper_seat(num1: '20', num2: '21', num3: '22', num4: '24',
-                      Useat: kupr, Mseat: kmid, Lseat: klow, SUseat: ksupr,),
+                      Useat: kupr, Mseat: kmid, Lseat: klow, SUseat: ksupr,
+                      UpdateCLR1: isNum ? Change_Clr : Clrbutton, UpdateCLR2: isNum ? Change_Clr : Clrbutton,
+                      UpdateCLR3: isNum ? Change_Clr : Clrbutton, UpdateCLR4: isNum ? Change_Clr : Clrbutton,
+                      UpdateTxtCLR1: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR2: isNum ? NTxt_Clr : Txt_Clr,
+                      UpdateTxtCLR3: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR4: isNum ? NTxt_Clr : Txt_Clr,),
                     SizedBox(height: 5,),
                     lower_seat(num1:'25', num2: '26', num4: '27', LSeat: klow,
-                      MSeat: kmid, USeat: kupr, SLSeat: kslow, num3: '31',),
+                      MSeat: kmid, USeat: kupr, SLSeat: kslow, num3: '31',
+                      UpdateCLR1: isNum ? Change_Clr : Clrbutton, UpdateCLR2: isNum ? Change_Clr : Clrbutton,
+                      UpdateCLR3: isNum ? Change_Clr : Clrbutton, UpdateCLR4: isNum ? Change_Clr : Clrbutton,
+                      UpdateTxtCLR1: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR2: isNum ? NTxt_Clr : Txt_Clr,
+                      UpdateTxtCLR3: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR4: isNum ? NTxt_Clr : Txt_Clr,),
                     SizedBox(height: 30,),
                     upper_seat(num1: '28', num2: '29', num3: '30', num4: '32',
-                      Useat: kupr, Mseat: kmid, Lseat: klow, SUseat: ksupr,),
+                      Useat: kupr, Mseat: kmid, Lseat: klow, SUseat: ksupr,
+                      UpdateCLR1: isNum ? Change_Clr : Clrbutton, UpdateCLR2: isNum ? Change_Clr : Clrbutton,
+                      UpdateCLR3: isNum ? Change_Clr : Clrbutton, UpdateCLR4: isNum ? Change_Clr : Clrbutton,
+                      UpdateTxtCLR1: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR2: isNum ? NTxt_Clr : Txt_Clr,
+                      UpdateTxtCLR3: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR4: isNum ? NTxt_Clr : Txt_Clr,),
                     SizedBox(height: 5,),
                     lower_seat(num1:'33', num2: '34', num4: '35', LSeat: klow,
-                      MSeat: kmid, USeat: kupr, SLSeat: kslow, num3: '39',),
+                      MSeat: kmid, USeat: kupr, SLSeat: kslow, num3: '39',
+                      UpdateCLR1: isNum ? Change_Clr : Clrbutton, UpdateCLR2: isNum ? Change_Clr : Clrbutton,
+                      UpdateCLR3: isNum ? Change_Clr : Clrbutton, UpdateCLR4: isNum ? Change_Clr : Clrbutton,
+                      UpdateTxtCLR1: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR2: isNum ? NTxt_Clr : Txt_Clr,
+                      UpdateTxtCLR3: isNum ? NTxt_Clr : Txt_Clr, UpdateTxtCLR4: isNum ? NTxt_Clr : Txt_Clr,),
                     SizedBox(height: 30,),
                   ],
                 ),

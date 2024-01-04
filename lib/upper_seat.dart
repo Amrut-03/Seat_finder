@@ -11,10 +11,21 @@ class upper_seat extends StatefulWidget {
   final String Mseat;
   final String Lseat;
   final String SUseat;
+  final Color UpdateCLR1;
+  final Color UpdateCLR2;
+  final Color UpdateCLR3;
+  final Color UpdateCLR4;
+  final Color UpdateTxtCLR1;
+  final Color UpdateTxtCLR2;
+  final Color UpdateTxtCLR3;
+  final Color UpdateTxtCLR4;
   const upper_seat({
     super.key, required this.num1, required this.num2, required this.num3,
     required this.num4, required this.Useat, required this.Mseat,
-    required this.Lseat, required this.SUseat,
+    required this.Lseat, required this.SUseat, required this.UpdateCLR1,
+    required this.UpdateCLR2, required this.UpdateCLR3, required this.UpdateCLR4,
+    required this.UpdateTxtCLR1, required this.UpdateTxtCLR2, required this.UpdateTxtCLR3,
+    required this.UpdateTxtCLR4,
   });
 
   @override
@@ -22,8 +33,6 @@ class upper_seat extends StatefulWidget {
 }
 
 class _upper_seatState extends State<upper_seat> {
-
-  bool isNum = false;
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +44,7 @@ class _upper_seatState extends State<upper_seat> {
               height: 60,
               width: 60,
               decoration: BoxDecoration(
-                color: isNum ? Change_Clr : Clrbutton,
+                color:widget.UpdateCLR1,
                 borderRadius: BorderRadius.circular(5),
               ),
               child: Column(
@@ -45,25 +54,25 @@ class _upper_seatState extends State<upper_seat> {
                     child: Text(widget.Lseat,style: TextStyle(
                         fontSize: 9,
                         fontWeight: FontWeight.bold,
-                        color: isNum ? NTxt_Clr : Txt_Clr,
+                        color: widget.UpdateTxtCLR1,
                     ),),
                   ),
                   Text(widget.num1,style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
-                      color: isNum ? NTxt_Clr : Txt_Clr,
+                      color: widget.UpdateTxtCLR1,
                   ),)
                 ],
               )
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(right: 2),
+          padding:EdgeInsets.only(right: 2),
           child: Container(
               height: 60,
               width: 60,
               decoration: BoxDecoration(
-                color: isNum ? Change_Clr : Clrbutton,
+                color: widget.UpdateCLR2,
                 borderRadius: BorderRadius.circular(5),
               ),
               child: Column(
@@ -73,13 +82,13 @@ class _upper_seatState extends State<upper_seat> {
                     child: Text(widget.Mseat,style: TextStyle(
                         fontSize: 9,
                         fontWeight: FontWeight.bold,
-                        color: isNum ? NTxt_Clr : Txt_Clr,
+                        color: widget.UpdateTxtCLR2,
                     ),),
                   ),
                   Text(widget.num2,style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
-                      color: isNum ? NTxt_Clr : Txt_Clr,
+                      color: widget.UpdateTxtCLR2,
                   ),)
                 ],
               )
@@ -91,7 +100,7 @@ class _upper_seatState extends State<upper_seat> {
               height: 60,
               width: 60,
               decoration: BoxDecoration(
-                color: isNum ? Change_Clr : Clrbutton,
+                color: widget.UpdateCLR3,
                 borderRadius: BorderRadius.circular(5),
               ),
               child: Column(
@@ -101,13 +110,13 @@ class _upper_seatState extends State<upper_seat> {
                     child: Text(widget.Useat,style: TextStyle(
                         fontSize: 9,
                         fontWeight: FontWeight.bold,
-                        color: isNum ? NTxt_Clr : Txt_Clr,
+                        color: widget.UpdateTxtCLR3,
                     ),),
                   ),
                   Text(widget.num3,style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
-                      color: isNum ? NTxt_Clr : Txt_Clr,
+                      color: widget.UpdateTxtCLR3,
                   ),)
                 ],
               )
@@ -118,7 +127,7 @@ class _upper_seatState extends State<upper_seat> {
               height: 60,
               width: 60,
               decoration: BoxDecoration(
-                color: isNum ? Change_Clr : Clrbutton,
+                color: widget.UpdateCLR4,
                 borderRadius: BorderRadius.circular(5),
               ),
               child: Column(
@@ -128,13 +137,13 @@ class _upper_seatState extends State<upper_seat> {
                     child: Text(widget.SUseat,style: TextStyle(
                         fontSize: 9,
                         fontWeight: FontWeight.bold,
-                        color: isNum ? NTxt_Clr : Txt_Clr,
+                        color: widget.UpdateTxtCLR4,
                     ),),
                   ),
                   Text(widget.num4,style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
-                      color: isNum ? NTxt_Clr : Txt_Clr,
+                      color: widget.UpdateTxtCLR4,
                   ),)
                 ],
               )
