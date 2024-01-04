@@ -43,6 +43,11 @@ class _upper_seatState extends State<upper_seat> {
               height: 60.h,
               width: 60.w,
               decoration: BoxDecoration(
+                boxShadow: [BoxShadow(
+                  color: Colors.blue,
+                  spreadRadius: 3,
+                  offset: Offset(0, 5)
+                )],
                 color:widget.UpdateCLR1,
                 borderRadius: BorderRadius.circular(5.r),
               ),
@@ -73,6 +78,11 @@ class _upper_seatState extends State<upper_seat> {
               decoration: BoxDecoration(
                 color: widget.UpdateCLR2,
                 borderRadius: BorderRadius.circular(5.r),
+                boxShadow: [BoxShadow(
+                    color: Colors.blue,
+                    spreadRadius: 3,
+                    offset: Offset(0, 5)
+                )],
               ),
               child: Column(
                 children: [
@@ -101,6 +111,11 @@ class _upper_seatState extends State<upper_seat> {
               decoration: BoxDecoration(
                 color: widget.UpdateCLR3,
                 borderRadius: BorderRadius.circular(5.r),
+                boxShadow: [BoxShadow(
+                    color: Colors.blue,
+                    spreadRadius: 3,
+                    offset: Offset(0, 5)
+                )],
               ),
               child: Column(
                 children: [
@@ -128,6 +143,11 @@ class _upper_seatState extends State<upper_seat> {
               decoration: BoxDecoration(
                 color: widget.UpdateCLR4,
                 borderRadius: BorderRadius.circular(5.r),
+                boxShadow: [BoxShadow(
+                    color: Colors.blue,
+                    spreadRadius: 3,
+                    offset: Offset(0, 5)
+                )],
               ),
               child: Column(
                 children: [

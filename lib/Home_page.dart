@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:seat_finder/constants.dart';
 import 'package:seat_finder/upper_seat.dart';
 import 'lower_seat.dart';
@@ -29,11 +30,11 @@ class _home_pageState extends State<home_page> {
             child: Column(
               children: [
                 Padding(
-                  padding:EdgeInsets.only(top: 50.h,bottom: 30.h,right: 150.w),
-                  child: Text("Seat Finder",style: TextStyle(
+                  padding:EdgeInsets.only(top: 20.h,bottom: 30.h,right: 135.w),
+                  child: Text("Seat Finder",style: GoogleFonts.ubuntu(
                     fontSize: 30.sp,
                     color: Colors.lightBlueAccent,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w800,
                     ),
                   ),
                 ),
@@ -62,10 +63,10 @@ class _home_pageState extends State<home_page> {
                           )
                       ),
                       hintText: "Enter Seat Number",
-                      hintStyle: TextStyle(
+                      hintStyle: GoogleFonts.ubuntu(
                         color: Colors.lightBlueAccent,
                         fontWeight: FontWeight.w400,
-                        fontSize: 15.sp,
+                        fontSize: 13.sp,
                       ),
                     ),
                   ),
@@ -78,15 +79,21 @@ class _home_pageState extends State<home_page> {
                             if(Enter_S_no.isNotEmpty){
                               Enter_S_no = Enter_S_no.trim();
                             }
+                            isNum = true;
+                            Future.delayed(Duration(milliseconds: 100), () {
+                              setState(() {
+                                isNum = false;
+                              });
+                            });
                           });
-                        }, child: Text("Find",style: TextStyle(
+                        }, child: Text("Find",style: GoogleFonts.ubuntu(
                               fontWeight: FontWeight.bold,
                               fontSize: 15.sp,
                               color: Colors.white,
                             ),),
                         style: ElevatedButton.styleFrom(
                           minimumSize: Size(100.w,50.h),
-                          backgroundColor: Colors.grey,
+                            backgroundColor:isNum ? Colors.blue : Colors.grey,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10.r),
                           )
@@ -109,7 +116,7 @@ class _home_pageState extends State<home_page> {
                       UpdateCLR3: Enter_S_no == '6' ? Change_Clr : Clrbutton, UpdateCLR4: Enter_S_no == '8' ? Change_Clr : Clrbutton,
                       UpdateTxtCLR1: Enter_S_no == '4' ? NTxt_Clr : Txt_Clr, UpdateTxtCLR2: Enter_S_no == '5' ? NTxt_Clr : Txt_Clr,
                       UpdateTxtCLR3: Enter_S_no == '6' ? NTxt_Clr : Txt_Clr, UpdateTxtCLR4: Enter_S_no == '8' ? NTxt_Clr : Txt_Clr,),
-                    SizedBox(height: 5.h,),
+                    SizedBox(height: 16.h,),
                     lower_seat(num1:'9', num2: '10', num4: '11', LSeat: klow,
                       MSeat: kmid, USeat: kupr, SLSeat: kslow, num3: '15',
                       UpdateCLR1: Enter_S_no == '9' ? Change_Clr : Clrbutton, UpdateCLR2: Enter_S_no == '10' ? Change_Clr : Clrbutton,
@@ -123,7 +130,7 @@ class _home_pageState extends State<home_page> {
                       UpdateCLR3: Enter_S_no == '14' ? Change_Clr : Clrbutton, UpdateCLR4: Enter_S_no == '16' ? Change_Clr : Clrbutton,
                       UpdateTxtCLR1: Enter_S_no == '12' ? NTxt_Clr : Txt_Clr, UpdateTxtCLR2: Enter_S_no == '13' ? NTxt_Clr : Txt_Clr,
                       UpdateTxtCLR3: Enter_S_no == '14' ? NTxt_Clr : Txt_Clr, UpdateTxtCLR4: Enter_S_no == '16' ? NTxt_Clr : Txt_Clr,),
-                    SizedBox(height: 5.h,),
+                    SizedBox(height: 16.h,),
                     lower_seat(num1:'17', num2: '18', num4: '23', LSeat: klow,
                       MSeat: kmid, USeat: kupr, SLSeat: kslow, num3: '19',
                       UpdateCLR1: Enter_S_no == '17' ? Change_Clr : Clrbutton, UpdateCLR2: Enter_S_no == '18' ? Change_Clr : Clrbutton,
@@ -137,7 +144,7 @@ class _home_pageState extends State<home_page> {
                       UpdateCLR3: Enter_S_no == '22' ? Change_Clr : Clrbutton, UpdateCLR4: Enter_S_no == '24' ? Change_Clr : Clrbutton,
                       UpdateTxtCLR1: Enter_S_no == '20' ? NTxt_Clr : Txt_Clr, UpdateTxtCLR2: Enter_S_no == '21' ? NTxt_Clr : Txt_Clr,
                       UpdateTxtCLR3: Enter_S_no == '22' ? NTxt_Clr : Txt_Clr, UpdateTxtCLR4: Enter_S_no == '24' ? NTxt_Clr : Txt_Clr,),
-                    SizedBox(height: 5.h,),
+                    SizedBox(height: 16.h,),
                     lower_seat(num1:'25', num2: '26', num4: '31', LSeat: klow,
                       MSeat: kmid, USeat: kupr, SLSeat: kslow, num3: '27',
                       UpdateCLR1: Enter_S_no == '25' ? Change_Clr : Clrbutton, UpdateCLR2: Enter_S_no == '26' ? Change_Clr : Clrbutton,
@@ -151,13 +158,13 @@ class _home_pageState extends State<home_page> {
                       UpdateCLR3: Enter_S_no == '30' ? Change_Clr : Clrbutton, UpdateCLR4: Enter_S_no == '32' ? Change_Clr : Clrbutton,
                       UpdateTxtCLR1: Enter_S_no == '28' ? NTxt_Clr : Txt_Clr, UpdateTxtCLR2: Enter_S_no == '29' ? NTxt_Clr : Txt_Clr,
                       UpdateTxtCLR3: Enter_S_no == '30' ? NTxt_Clr : Txt_Clr, UpdateTxtCLR4: Enter_S_no == '32' ? NTxt_Clr : Txt_Clr,),
-                    SizedBox(height: 5.h,),
-                    lower_seat(num1:'33', num2: '34', num4: '39', LSeat: klow,
-                      MSeat: kmid, USeat: kupr, SLSeat: kslow, num3: '35',
-                      UpdateCLR1: Enter_S_no == '33' ? Change_Clr : Clrbutton, UpdateCLR2: Enter_S_no == '34' ? Change_Clr : Clrbutton,
-                      UpdateCLR3: Enter_S_no == '35' ? Change_Clr : Clrbutton, UpdateCLR4: Enter_S_no == '39' ? Change_Clr : Clrbutton,
-                      UpdateTxtCLR1: Enter_S_no == '33' ? NTxt_Clr : Txt_Clr, UpdateTxtCLR2: Enter_S_no == '34' ? NTxt_Clr : Txt_Clr,
-                      UpdateTxtCLR3: Enter_S_no == '35' ? NTxt_Clr : Txt_Clr, UpdateTxtCLR4: Enter_S_no == '39' ? NTxt_Clr : Txt_Clr,),
+                    SizedBox(height: 16.h,),
+                    // lower_seat(num1:'33', num2: '34', num4: '39', LSeat: klow,
+                    //   MSeat: kmid, USeat: kupr, SLSeat: kslow, num3: '35',
+                    //   UpdateCLR1: Enter_S_no == '33' ? Change_Clr : Clrbutton, UpdateCLR2: Enter_S_no == '34' ? Change_Clr : Clrbutton,
+                    //   UpdateCLR3: Enter_S_no == '35' ? Change_Clr : Clrbutton, UpdateCLR4: Enter_S_no == '39' ? Change_Clr : Clrbutton,
+                    //   UpdateTxtCLR1: Enter_S_no == '33' ? NTxt_Clr : Txt_Clr, UpdateTxtCLR2: Enter_S_no == '34' ? NTxt_Clr : Txt_Clr,
+                    //   UpdateTxtCLR3: Enter_S_no == '35' ? NTxt_Clr : Txt_Clr, UpdateTxtCLR4: Enter_S_no == '39' ? NTxt_Clr : Txt_Clr,),
                     SizedBox(height: 30.h,),
                   ],
                 ),
