@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:seat_finder/constants.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class lower_seat extends StatefulWidget {
   final String num1;
@@ -37,26 +37,26 @@ class _lower_seatState extends State<lower_seat> {
     return Row(
       children: [
         Padding(
-          padding: EdgeInsets.only(right: 2),
+          padding: EdgeInsets.only(right: 2.w),
           child: Container(
-              height: 60,
-              width: 60,
+              height: 60.h,
+              width: 60.w,
               decoration: BoxDecoration(
                 color: widget.UpdateCLR1,
-                borderRadius: BorderRadius.circular(5),
+                borderRadius: BorderRadius.circular(5.r),
               ),
               child: Column(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(top: 10,bottom: 3),
+                    padding: EdgeInsets.only(top: 10.h,bottom: 3.h),
                     child: Text(widget.num1,style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 20.sp,
                         fontWeight: FontWeight.bold,
                         color: widget.UpdateTxtCLR1,
                     ),),
                   ),
                   Text(widget.USeat,style: TextStyle(
-                      fontSize: 9,
+                      fontSize: 9.sp,
                       fontWeight: FontWeight.bold,
                       color: widget.UpdateTxtCLR1,
                   ),)
@@ -65,26 +65,26 @@ class _lower_seatState extends State<lower_seat> {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(right: 2),
+          padding:EdgeInsets.only(right: 2.w),
           child: Container(
-              height: 60,
-              width: 60,
+              height: 60.h,
+              width: 60.w,
               decoration: BoxDecoration(
                 color: widget.UpdateCLR2,
-                borderRadius: BorderRadius.circular(5),
+                borderRadius: BorderRadius.circular(5.r),
               ),
               child: Column(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(top: 10,bottom: 3),
+                    padding: EdgeInsets.only(top: 10.h,bottom: 3.h),
                     child: Text(widget.num2,style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 20.sp,
                         fontWeight: FontWeight.bold,
                         color: widget.UpdateTxtCLR2,
                     ),),
                   ),
                   Text(widget.MSeat,style: TextStyle(
-                      fontSize: 9,
+                      fontSize: 9.sp,
                       fontWeight: FontWeight.bold,
                       color: widget.UpdateTxtCLR2,
                   ),)
@@ -93,26 +93,26 @@ class _lower_seatState extends State<lower_seat> {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(right: 2),
+          padding: EdgeInsets.only(right: 2.w),
           child: Container(
-              height: 60,
-              width: 60,
+              height: 60.h,
+              width: 60.w,
               decoration: BoxDecoration(
                 color: widget.UpdateCLR3,
-                borderRadius: BorderRadius.circular(5),
+                borderRadius: BorderRadius.circular(5.r),
               ),
               child: Column(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(top: 10,bottom: 3),
+                    padding: EdgeInsets.only(top: 10.h,bottom: 3.h),
                     child: Text(widget.num3,style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 20.sp,
                         fontWeight: FontWeight.bold,
                         color: widget.UpdateTxtCLR3,
                     ),),
                   ),
                   Text(widget.LSeat,style: TextStyle(
-                      fontSize: 9,
+                      fontSize: 9.sp,
                       fontWeight: FontWeight.bold,
                       color: widget.UpdateTxtCLR3,
                   ),)
@@ -120,26 +120,26 @@ class _lower_seatState extends State<lower_seat> {
               )
           ),
         ),
-        Padding(padding: EdgeInsets.only(left: 110),
+        Padding(padding: EdgeInsets.only(left: 75.w),
           child: Container(
-              height: 60,
-              width: 60,
+              height: 60.h,
+              width: 60.w,
               decoration: BoxDecoration(
                 color: widget.UpdateCLR4,
-                borderRadius: BorderRadius.circular(5),
+                borderRadius: BorderRadius.circular(5.r),
               ),
               child: Column(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(top: 10,bottom: 3),
+                    padding: EdgeInsets.only(top: 10.h,bottom: 3.h),
                     child: Text(widget.num4,style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 20.sp,
                         fontWeight: FontWeight.bold,
                         color: widget.UpdateTxtCLR4,
                     ),),
                   ),
                   Text(widget.SLSeat,style: TextStyle(
-                      fontSize: 9,
+                      fontSize: 9.sp,
                       fontWeight: FontWeight.bold,
                       color: widget.UpdateTxtCLR4,
                   ),)

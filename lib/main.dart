@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:seat_finder/Home_page.dart';
 
 void main() {
@@ -11,9 +12,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      home: home_page(),
+    return ScreenUtilInit(
+      designSize: const Size(375,812),
+      builder:(context,child)=> MaterialApp(
+        title: 'Flutter Demo',
+        home: home_page(),
+      ),
     );
   }
 }
