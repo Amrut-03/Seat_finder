@@ -38,7 +38,7 @@ class _upper_seatState extends State<upper_seat> {
     return Row(
       children: [
         Padding(
-          padding: EdgeInsets.only(right: 2),
+          padding: EdgeInsets.only(right: 2.w),
           child: Container(
               height: 60.h,
               width: 60.w,
