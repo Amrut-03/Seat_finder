@@ -57,7 +57,7 @@ class _upper_seatState extends State<upper_seat> {
                     ),),
                   ),
                   Text(widget.num1,style: TextStyle(
-                      fontSize: 20.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.bold,
                       color: widget.UpdateTxtCLR1,
                   ),)
@@ -85,7 +85,7 @@ class _upper_seatState extends State<upper_seat> {
                     ),),
                   ),
                   Text(widget.num2,style: TextStyle(
-                      fontSize: 20.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.bold,
                       color: widget.UpdateTxtCLR2,
                   ),)
@@ -113,7 +113,7 @@ class _upper_seatState extends State<upper_seat> {
                     ),),
                   ),
                   Text(widget.num3,style: TextStyle(
-                      fontSize: 20.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.bold,
                       color: widget.UpdateTxtCLR3,
                   ),)
@@ -140,7 +140,7 @@ class _upper_seatState extends State<upper_seat> {
                     ),),
                   ),
                   Text(widget.num4,style: TextStyle(
-                      fontSize: 20.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.bold,
                       color: widget.UpdateTxtCLR4,
                   ),)
