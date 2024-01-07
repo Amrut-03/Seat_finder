@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: Size(375,812),
-      builder:(context,child)=> GetMaterialApp(
+      designSize: Size(375, 812),
+      builder: (context, child) => GetMaterialApp(
         title: 'Seat Finder',
         home: home_page(),
       ),

@@ -37,18 +37,35 @@ class _home_pageState extends State<home_page> {
             padding: EdgeInsets.symmetric(horizontal: 25.w),
             child: Column(
               children: [
-                Padding(
-                  padding:
-                      EdgeInsets.only(top: 20.h, bottom: 30.h, right: 135.w),
-                  child: Text(
-                    "Seat Finder",
-                    style: GoogleFonts.ubuntu(
-                      fontSize: 30.sp,
-                      color: Colors.lightBlueAccent,
-                      fontWeight: FontWeight.w800,
+                Row(children: [
+                  Padding(
+                    padding:
+                        EdgeInsets.only(top: 20.h, bottom: 30.h, right: 60.w),
+                    child: Text(
+                      "Seat Finder",
+                      style: GoogleFonts.ubuntu(
+                        fontSize: 30.sp,
+                        color: Colors.lightBlueAccent,
+                        fontWeight: FontWeight.w800,
+                      ),
                     ),
                   ),
-                ),
+                  ElevatedButton(
+                      onPressed: () {
+                        setState(() {});
+                      },
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: Size(80, 40),
+                        backgroundColor: Color(0xFFB0DDFF),
+                      ),
+                      child: Text(
+                        "Refresh",
+                        style: GoogleFonts.ubuntu(
+                          color: Colors.white,
+                          fontSize: 15,
+                        ),
+                      )),
+                ]),
                 Stack(children: [
                   TextField(
                     controller: search,
@@ -154,6 +171,16 @@ class _home_pageState extends State<home_page> {
                     SizedBox(height: 30),
                     Row(
                       children: [
+                        isSelected[20] ? allSelectedSeats[20] : allSeats[20],
+                        isSelected[21] ? allSelectedSeats[21] : allSeats[21],
+                        isSelected[22] ? allSelectedSeats[22] : allSeats[22],
+                        SizedBox(width: 115.w),
+                        isSelected[24] ? allSelectedSeats[24] : allSeats[24]
+                      ],
+                    ),
+                    SizedBox(height: 17),
+                    Row(
+                      children: [
                         isSelected[25] ? allSelectedSeats[25] : allSeats[25],
                         isSelected[26] ? allSelectedSeats[26] : allSeats[26],
                         isSelected[27] ? allSelectedSeats[27] : allSeats[27],
@@ -161,7 +188,7 @@ class _home_pageState extends State<home_page> {
                         isSelected[31] ? allSelectedSeats[31] : allSeats[31],
                       ],
                     ),
-                    SizedBox(height: 17),
+                    SizedBox(height: 30),
                     Row(
                       children: [
                         isSelected[28] ? allSelectedSeats[28] : allSeats[28],
@@ -171,7 +198,7 @@ class _home_pageState extends State<home_page> {
                         isSelected[32] ? allSelectedSeats[32] : allSeats[32]
                       ],
                     ),
-                    SizedBox(height: 30),
+                    SizedBox(height: 17),
                     Row(
                       children: [
                         isSelected[33] ? allSelectedSeats[33] : allSeats[33],
@@ -181,7 +208,7 @@ class _home_pageState extends State<home_page> {
                         isSelected[39] ? allSelectedSeats[39] : allSeats[39],
                       ],
                     ),
-                    SizedBox(height: 17),
+                    SizedBox(height: 30),
                     Row(
                       children: [
                         isSelected[36] ? allSelectedSeats[36] : allSeats[36],
@@ -191,12 +218,6 @@ class _home_pageState extends State<home_page> {
                         isSelected[40] ? allSelectedSeats[40] : allSeats[40],
                       ],
                     ),
-                    SizedBox(height: 20),
-                    ElevatedButton(
-                        onPressed: () {
-                          setState(() {});
-                        },
-                        child: Text("Refresh")),
                     SizedBox(height: 20),
                   ],
                 )

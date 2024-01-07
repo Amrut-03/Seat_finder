@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:seat_finder/seat_details.dart';
 
-List<bool> isSelected = List.filled(41,false);
+List<bool> isSelected = List.filled(41, false);
 
 // List of All Seats in Lower And Upper Seats
 List<Widget> allSeats = [
@@ -32,22 +32,22 @@ List<Widget> allSeats = [
   getUpperSeat(seatnum: '22', seat_type: 'UPPER'),
   getLowerSeat(seatnum: '23', seat_type: 'SIDE LOWER'),
   getUpperSeat(seatnum: '24', seat_type: 'SIDE UPPER'),
-  getUpperSeat(seatnum: '25', seat_type: 'LOWER'),
-  getUpperSeat(seatnum: '26', seat_type: 'MIDDLE'),
-  getUpperSeat(seatnum: '27', seat_type: 'UPPER'),
-  getLowerSeat(seatnum: '28', seat_type: 'LOWER'),
-  getLowerSeat(seatnum: '29', seat_type: 'MIDDLE'),
-  getLowerSeat(seatnum: '30', seat_type: 'UPPER'),
-  getUpperSeat(seatnum: '31', seat_type: 'SIDE LOWER'),
-  getLowerSeat(seatnum: '32', seat_type: 'SIDE UPPER'),
-  getUpperSeat(seatnum: '33', seat_type: 'LOWER'),
-  getUpperSeat(seatnum: '34', seat_type: 'MIDDLE'),
-  getUpperSeat(seatnum: '35', seat_type: 'UPPER'),
-  getLowerSeat(seatnum: '36', seat_type: 'SIDE UPPER'),
-  getLowerSeat(seatnum: '37', seat_type: 'LOWER'),
-  getLowerSeat(seatnum: '38', seat_type: 'MIDDLE'),
-  getUpperSeat(seatnum: '39', seat_type: 'SIDE LOWER'),
-  getLowerSeat(seatnum: '40', seat_type: 'SIDE UPPER'),
+  getLowerSeat(seatnum: '25', seat_type: 'LOWER'),
+  getLowerSeat(seatnum: '26', seat_type: 'MIDDLE'),
+  getLowerSeat(seatnum: '27', seat_type: 'UPPER'),
+  getUpperSeat(seatnum: '28', seat_type: 'LOWER'),
+  getUpperSeat(seatnum: '29', seat_type: 'MIDDLE'),
+  getUpperSeat(seatnum: '30', seat_type: 'UPPER'),
+  getLowerSeat(seatnum: '31', seat_type: 'SIDE LOWER'),
+  getUpperSeat(seatnum: '32', seat_type: 'SIDE UPPER'),
+  getLowerSeat(seatnum: '33', seat_type: 'LOWER'),
+  getLowerSeat(seatnum: '34', seat_type: 'MIDDLE'),
+  getLowerSeat(seatnum: '35', seat_type: 'UPPER'),
+  getUpperSeat(seatnum: '36', seat_type: 'SIDE UPPER'),
+  getUpperSeat(seatnum: '37', seat_type: 'LOWER'),
+  getUpperSeat(seatnum: '38', seat_type: 'MIDDLE'),
+  getLowerSeat(seatnum: '39', seat_type: 'SIDE LOWER'),
+  getUpperSeat(seatnum: '40', seat_type: 'SIDE UPPER'),
 ];
 
 // List of All Selected Seats.
